@@ -1,0 +1,13 @@
+<!-- // This are components that can be rendered similar like react -->
+<%- include('header')-%>
+    <h1>hello everyone</h1>
+    <%=firstLorum%>
+    <!-- <%for( let i=0;i < basicList.length;i++){%>
+        <ul>
+            <%=basicList[i]%>
+        </ul>
+    <%}%> -->
+    <% basicList.foreach((element)=>%>
+<ul><%= element%></ul>
+
+<%)%>

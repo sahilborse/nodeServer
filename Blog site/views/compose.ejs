@@ -1,0 +1,14 @@
+<%- include('header')-%>
+
+<form action="/compose" method="post">
+    <input name="input1" type="text" placeholder="Blog" />
+    <button type="submit">publish</button>
+</form>
+<%for( let i=0;i < basicList.length;i++){%>
+    <ul>
+        <%=basicList[i]%>
+    </ul>
+<%}%>
+
+
+

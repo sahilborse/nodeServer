@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <!-- the /week/ is variable and can change ceratin logic on this face using conditional statment
+     -->
+     
+    <h1 style="color: aqua;text-align:center"><%=week%> To Do List</h1>
+    <%for(var i=0;i < addUp.length;i++){%>
+       <input type="checkbox"/>
+        <op><%=addUp[i]%></op>
+    <%}%>
+    
+
+
+     <form action="/" method="post">
+        
+        <input type="text" name="nextToDo" autocomplete="off"/>
+        <button type="submit">submit</button>
+
+     </form>
+</body>
+</html>
